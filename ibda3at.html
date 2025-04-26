@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض إبداعات التلاميذ - مؤسسة ابن زهر الإعدادية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(to bottom, #1e3a8a, #2563eb);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .gallery-section {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .gallery-section h2 {
+            color: #1e3a8a;
+            border-bottom: 2px solid #1e3a8a;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .roles-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .role-item {
+            background: #f8fafc;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 10px;
+            border-right: 4px solid #1e3a8a;
+            transition: transform 0.3s ease;
+        }
+
+        .role-item:hover {
+            transform: translateX(-5px);
+        }
+
+        .artwork-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .artwork-card {
+            background: #f8fafc;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .artwork-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .artwork-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .artwork-info {
+            padding: 15px;
+        }
+
+        .tip-box {
+            background: #2563eb;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1e3a8a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">عودة للرئيسية</a>
+        
+        <div class="header">
+            <h1>🎨 معرض إبداعات التلاميذ</h1>
+            <p>المكان الذي نحتفل فيه بمواهب التلاميذ في مختلف المجالات الإبداعية</p>
+        </div>
+
+        <div class="gallery-section">
+            <h2>🌟 دور المعرض</h2>
+            <ul class="roles-list">
+                <li class="role-item">
+                    <strong>🌱 تشجيع الإبداع:</strong>
+                    نؤمن بأن كل تلميذ يمتلك موهبة فريدة يجب اكتشافها وتنميتها
+                </li>
+                <li class="role-item">
+                    <strong>💡 منصة للعرض:</strong>
+                    فرصة لعرض الأعمال الفنية والإبداعية وتعزيز التبادل الثقافي
+                </li>
+                <li class="role-item">
+                    <strong>🌍 إثراء المجتمع المدرسي:</strong>
+                    بناء مجتمع مدرسي يتسم بالإبداع والتعاون
+                </li>
+                <li class="role-item">
+                    <strong>🏆 تحفيز التلاميذ:</strong>
+                    تعزيز الثقة بالنفس وتشجيع التفوق والإبداع
+                </li>
+                <li class="role-item">
+                    <strong>🎉 بيئة تنافسية صحية:</strong>
+                    تنظيم مسابقات ومعارض دورية لتحفيز الابتكار
+                </li>
+            </ul>
+        </div>
+
+        <div class="gallery-section">
+            <h2>🎨 معرض الأعمال</h2>
+            <div class="artwork-grid">
+                <div class="artwork-card">
+                    <img src="https://via.placeholder.com/300x200" alt="عمل فني">
+                    <div class="artwork-info">
+                        <h3>عنوان العمل</h3>
+                        <p>اسم الطالب: _____</p>
+                        <p>المستوى: _____</p>
+                        <p>نوع العمل: _____</p>
+                    </div>
+                </div>
+                <!-- يمكن إضافة المزيد من الأعمال هنا -->
+            </div>
+        </div>
+
+        <div class="tip-box">
+            <h3>🔗 هدفنا النهائي</h3>
+            <p>أن يكون هذا المعرض منصة تفاعلية تسمح لجميع التلاميذ بمشاركة إبداعاتهم، والحصول على تقدير ومكافآت عن جهودهم</p>
+        </div>
+    </div>
+</body>
+</html>
